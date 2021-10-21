@@ -8,5 +8,8 @@
       }
     ],
     "@babel/typescript"
+  ],
+  "plugins": [
+    "babel-plugin-styled-components"
   ]
 }

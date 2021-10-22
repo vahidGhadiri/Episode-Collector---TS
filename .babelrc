@@ -10,6 +10,7 @@
     "@babel/typescript"
   ],
   "plugins": [
-    "babel-plugin-styled-components"
+    "babel-plugin-styled-components",
+    "@babel/plugin-transform-runtime"
   ]
 }

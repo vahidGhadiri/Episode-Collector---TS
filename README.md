@@ -1,3 +1,2 @@
-# Rick-and-Morty---TS
-Rick and Morty episode picker
+# Episode Collectore
 React/ Typescript/ Redux-thunk/ Webpack/ Jest  

@@ -1,20 +1,22 @@
 import React from "react"
 import {IEpisode} from "../../../../config/interfaces";
 
+import {Card, Container} from "./EpisodeList.style";
 
-const EpisodeList: React.FC = ({data}: any) => {
+
+const EpisodeList: React.FunctionComponent<{ data: any }> = ({data}) => {
     return (
-        <section>
+        <Container>
             {data.map((item: IEpisode) => (
-                <section key={item.id}>
+                <Card key={item.id}>
                     <img src={item.image.original} alt={`episode ${item.name}`}/>
-                    <div>{item.name}</div>
+                    <h3>{item.name}</h3>
                     <section>
                         Season: {item.season} - Episode: {item.number}
                     </section>
-                </section>
+                </Card>
             ))}
-        </section>
+        </Container>
     )
 }
 

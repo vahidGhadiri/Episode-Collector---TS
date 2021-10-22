@@ -6,6 +6,8 @@ import * as urls from "../../config/urls";
 import {setData} from "../../context/actions";
 import {EpisodeList} from "./components";
 
+import {Header, Layout} from "./Home.style";
+
 
 const Home: React.FC = () => {
     const {state, dispatch} = useContext(Store)
@@ -23,11 +25,13 @@ const Home: React.FC = () => {
     }, [])
 
     return (
-        <>
-            <h1>Rick & Morty</h1>
-            <p>Pick your favourite episode</p>
+        <Layout>
+            <Header>
+                <h1>Episode Collector</h1>
+                <p>Pick your favourite episode</p>
+            </Header>
             <EpisodeList data={state.episodes}/>
-        </>
+        </Layout>
     )
 }
 

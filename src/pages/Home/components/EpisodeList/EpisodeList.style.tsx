@@ -20,3 +20,15 @@ export const Card = styled.div`
     border-radius: .5rem;
   }
 `
+
+export const Button = styled.button`
+  all: unset;
+  font-size: 2rem;
+`
+
+export const Detail = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+`

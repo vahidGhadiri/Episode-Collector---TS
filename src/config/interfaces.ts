@@ -1,6 +1,6 @@
 export interface IState {
-    episodes: Array<string>,
-    favourites: Array<string>
+    episodes: Array<IEpisode>,
+    favourites: Array<IEpisode>
 }
 
 export interface IAction {
